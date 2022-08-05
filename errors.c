@@ -1,7 +1,7 @@
 #include "shell.h"
 
 int num_len(int num);
-char *_itoa(int num);
+char *convert(int num);
 int create_error(char **args, int err);
 
 /**
@@ -34,12 +34,12 @@ int num_len(int num)
 }
 
 /**
- * _itoa - Converts an integer to a string.
+ * convert - Converts an integer to a string.
  * @num: The integer.
  *
  * Return: The converted string.
  */
-char *_itoa(int num)
+char *convert(int num)
 {
 	char *buffer;
 	int len = num_len(num);
