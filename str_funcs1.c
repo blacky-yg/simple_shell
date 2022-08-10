@@ -30,16 +30,16 @@ int _strlen(const char *s)
  *
  * Return: Pointer to dest.
  */
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
-	size_t i;
-
-	for (i = 0; src[i] != '\0'; i++)
+	int i;
+	for (i = 0; src[i] != 0; i++)
 		dest[i] = src[i];
-	dest[i] = '\0';
-	return (dest);
-}
+	dest[i] = src[i];
 
+	return (dest);
+
+}
 /**
  * _strcat - Concantenates two strings.
  * @dest: Pointer to destination string.
