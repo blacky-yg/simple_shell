@@ -68,7 +68,7 @@ char *get_location(char *command);
 list_t *get_path_dir(char *path);
 int execute(char **args, char **front);
 void free_list(list_t *head);
-char *convert(int num);
+char *_itoa(int num);
 
 /* Input Helpers */
 void handle_line(char **line, ssize_t read);
